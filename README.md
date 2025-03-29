@@ -1,22 +1,43 @@
-# Image URL Copier Extension
+# Image URL Copier Extension - Installation Guide
 
-This Chrome extension allows you to copy image URLs from any website, even those that normally prevent this action.
+## Quick Installation Steps
 
-## Installation
+1. Download the ZIP file I shared with you
+2. Extract/Unzip the file to a folder on your computer
+3. Open Chrome browser
+4. Type `chrome://extensions` in the address bar and press Enter
+5. Turn on "Developer mode" by clicking the toggle switch in the top-right corner
+6. Click "Load unpacked" button
+7. Select the folder where you extracted the extension files
+8. Done! You should see the extension icon in your Chrome toolbar
 
-1. Open Chrome and go to `chrome://extensions/`
-2. Enable "Developer mode" in the top right corner
-3. Click "Load unpacked" and select this directory
+## How to Use
 
-## Usage
+1. Click the extension icon in your toolbar
+2. Click "Start Image Selection Mode"
+3. Move your mouse over any image you want to copy
+4. When you see the blue outline and "Click to Copy URL" tooltip, click the image
+5. The image URL is now copied to your clipboard!
+6. Click "Stop Image Selection Mode" when you're done
 
-1. Right-click on any image on any website
-2. Select "Copy Image URL" from the context menu
-3. The image URL will be copied to your clipboard
-4. A small notification will appear confirming the copy action
+## Troubleshooting
 
-## Files
-- `manifest.json`: Extension configuration
-- `background.js`: Handles context menu creation and click events
-- `content.js`: Handles clipboard operations and notifications
-- `icon16.png`, `icon48.png`, `icon128.png`: Extension icons
+If the extension doesn't appear:
+- Make sure you turned on "Developer mode"
+- Try refreshing the extensions page
+- Make sure you selected the correct folder with all the extension files
+
+If you see any errors:
+- Try removing the extension and loading it again
+- Make sure all files are present in the folder:
+  - manifest.json
+  - popup.html
+  - popup.js
+  - content.js
+  - styles.css
+  - icon16.png
+  - icon48.png
+
+## Need Help?
+
+If you have any issues, contact me and I'll help you set it up!
