@@ -1,0 +1,26 @@
+.img-url-copier-hover {
+  position: relative !important;
+  outline: 2px solid #2196F3 !important;
+  outline-offset: 2px !important;
+}
+
+/* Remove any existing tooltips */
+.img-url-copier-tooltip {
+  display: none !important;
+}
+
+/* Create a single tooltip container */
+#img-url-copier-tooltip {
+  position: fixed !important;
+  z-index: 999999 !important;
+  background: rgba(33, 150, 243, 0.9) !important;
+  color: white !important;
+  padding: 5px 10px !important;
+  border-radius: 4px !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 12px !important;
+  pointer-events: none !important;
+  white-space: nowrap !important;
+  display: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image URL Copier</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .status {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #e8f5e9;
+      margin-bottom: 10px;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .select-button {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background-color 0.3s;
+    }
+    .select-button:hover {
+      background-color: #1976D2;
+    }
+    .select-button.active {
+      background-color: #4CAF50;
+    }
+    .select-button.active:hover {
+      background-color: #388E3C;
+    }
+    .icon {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+    .status-text {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button id="selectMode" class="select-button">
+      <svg class="icon" viewBox="0 0 24 24">
+        <path d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V20H17V4H7M9,6H15V8H9V6M9,10H15V12H9V10M9,14H13V16H9V14Z"/>
+      </svg>
+      Start Image Selection Mode
+    </button>
+    <div id="statusText" class="status-text">Click the button to start selecting images</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
